@@ -73,7 +73,7 @@ namespace SingleResponsibilityPrinciple
                 LogMessage("WARN", " Trade amount on line {0} is too small: '{1}'", currentLine, fields[1]);
                 return false;
             }
-            if (tradeAmount > 100000)
+            if (tradeAmount > 1000000000)
             {
                 LogMessage("WARN", " Trade amount on line {0} is too small: '{1}'", currentLine, fields[1]);
                 return false;
