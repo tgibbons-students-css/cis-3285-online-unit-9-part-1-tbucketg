@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibilityPrinciple
 {
+    //Garrett test
     public class TradeProcessor
     {
         private IEnumerable<string> ReadTradeData(Stream stream)
