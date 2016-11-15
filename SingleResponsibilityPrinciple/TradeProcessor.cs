@@ -89,12 +89,12 @@ namespace SingleResponsibilityPrinciple
             return true;
         }
 
-        private void LogMessage(string msgType, string message, params object[] args)
+        private void LogMessage(string type, string message, params object[] args)
         {
-            Console.WriteLine(message, args);
+            Console.WriteLine(type + ": " + message, args);
             using (StreamWriter logfile = File.AppendText("log.xml"))
             {
-                logfile.WriteLine("<log><type>"+msgType+"</type><message>" + message + "</message></log> ", args);
+                logfile.WriteLine("<log><type>" + type + "</type><message>" + message + "</message></log> ", args);
             }
         }
 
